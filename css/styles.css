@@ -788,3 +788,18 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+/*------------------SUBSCRIPTION------------------------------*/
+.footer-box3 {
+  margin-left: 93px;
+}
+
+.sub-join {
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
