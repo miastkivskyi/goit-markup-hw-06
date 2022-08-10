@@ -65,8 +65,40 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-
           <p class="sub-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form>
+            <div class="form">
+              <label class="label-text" for="name">Ім"я</label>
+              <input class="input" type="text" name="name" id="name" />
+            </div>
+            <div class="form">
+              <label class="label-text" for="tel">Телефон</label>
+              <input class="input" type="tel" name="name" id="tel" />
+            </div>
+            <div class="form">
+              <label class="label-text" for="mail">Пошта</label>
+              <input class="input" type="email" name="mail" id="mail" />
+            </div>
+            <div class="form">
+              <label class="label-text">Коментар</label>
+              <textarea
+                class="input area"
+                name="response"
+                id="response"
+                cols="20"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy">
+                Погоджуюся з розсилкою та приймаю
+                <a href="@" class="contract">Умови договору</a>
+              </label>
+            </div>
+            <button class="btn-modal" type="submit">Відправити</button>
+          </form>
         </div>
       </div>
       <section class="hero">
