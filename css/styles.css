@@ -898,8 +898,8 @@ img {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .input {
@@ -907,6 +907,8 @@ img {
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 42px;
+  width: 448px;
 }
 .form-checkbox {
   margin-top: 20px;
@@ -926,4 +928,24 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.02em;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding-left: 16px;
+}
+
+.nol {
+  position: relative;
+}
+.icon5 {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  margin-right: 15px;
+  transform: translateY(-50%);
 }
