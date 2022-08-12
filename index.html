@@ -69,25 +69,35 @@
           <form>
             <div class="form">
               <label class="label-text" for="name">Ім"я</label>
-              <div class="nol">
+              <div class="position">
                 <input class="input" type="text" name="name" id="name" />
-                <svg class="icon5" width="12" height="12">
+                <svg class="icon-demo" width="12" height="12">
                   <use href="./images/icons.svg#icon-human"></use>
                 </svg>
               </div>
             </div>
             <div class="form">
               <label class="label-text" for="tel">Телефон</label>
-              <input class="input" type="tel" name="name" id="tel" />
+              <div class="position">
+                <input class="input" type="tel" name="name" id="tel" />
+                <svg class="icon-demo" width="13" height="13">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
             <div class="form">
               <label class="label-text" for="mail">Пошта</label>
-              <input class="input" type="email" name="mail" id="mail" />
+              <div class="position">
+                <input class="input" type="email" name="mail" id="mail" />
+                <svg class="icon-demo" width="15" height="12">
+                  <use href="./images/icons.svg#icon-letter"></use>
+                </svg>
+              </div>
             </div>
             <div class="form">
               <label class="label-text">Коментар</label>
               <textarea
-                class="input area"
+                class="area"
                 name="response"
                 id="response"
                 cols="20"
@@ -99,7 +109,7 @@
               <input type="checkbox" name="policy" id="policy" />
               <label for="policy">
                 Погоджуюся з розсилкою та приймаю
-                <a href="@" class="contract">Умови договору</a>
+                <a href="@" class="contract"> Умови договору</a>
               </label>
             </div>
             <button class="btn-modal" type="submit">Відправити</button>

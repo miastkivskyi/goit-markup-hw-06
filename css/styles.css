@@ -824,6 +824,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+  color: var(--primary-text-color);
 }
 
 .subscription-form {
@@ -909,6 +910,11 @@ img {
   padding-bottom: 10px;
   padding-left: 42px;
   width: 448px;
+  cursor: pointer;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox {
   margin-top: 20px;
@@ -916,11 +922,25 @@ img {
 }
 .area {
   height: 120px;
+  width: 448px;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.area:focus {
+  border-color: var(--logo-color);
 }
 
 .contract {
   color: var(--logo-color);
+  text-decoration: underline;
 }
 
 .policy {
@@ -936,16 +956,28 @@ textarea::placeholder {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-left: 16px;
 }
 
-.nol {
+.position {
   position: relative;
 }
-.icon5 {
+
+.input:focus {
+  border-color: var(--logo-color);
+}
+
+.input:focus + .icon-demo {
+  fill: var(--logo-color);
+}
+
+.icon-demo {
   position: absolute;
   top: 50%;
   left: 16px;
   margin-right: 15px;
   transform: translateY(-50%);
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
