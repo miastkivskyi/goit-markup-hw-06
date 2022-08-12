@@ -893,6 +893,8 @@ img {
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 28px;
   margin: 30px auto 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form {
@@ -917,8 +919,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
-  padding-left: 54px;
+  padding-left: 52px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .area {
   height: 120px;
@@ -941,13 +949,7 @@ img {
 .contract {
   color: var(--logo-color);
   text-decoration: underline;
-}
-
-.policy {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
+  margin-left: 4px;
 }
 
 textarea::placeholder {
@@ -980,4 +982,29 @@ textarea::placeholder {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox {
+  appearance: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.icon-mark {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--section-title-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .icon-mark {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(../images/other-pictures/mark.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
