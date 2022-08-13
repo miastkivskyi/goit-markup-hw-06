@@ -94,8 +94,8 @@
                 </svg>
               </div>
             </div>
-            <div class="form">
-              <label class="label-text">Коментар</label>
+            <div class="form response">
+              <label class="label-text" for="response">Коментар</label>
               <textarea
                 class="area"
                 name="response"
@@ -111,7 +111,9 @@
               Погоджуюся з розсилкою та приймаю
               <a href="@" class="contract"> Умови договору</a>
             </label>
-            <button class="btn-modal" type="submit">Відправити</button>
+            <div class="position-btn">
+              <button class="btn-modal" type="submit">Відправити</button>
+            </div>
           </form>
         </div>
       </div>
@@ -506,7 +508,7 @@
         </div>
         <div class="footer-box3">
           <p class="sub-join">Підпишіться на розсилку</p>
-          <div class="subscription-form">
+          <form class="subscription-form">
             <label>
               <input
                 type="email"
@@ -521,7 +523,7 @@
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
