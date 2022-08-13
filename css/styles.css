@@ -879,7 +879,7 @@ img {
 }
 
 .btn-modal {
-  display: flex;
+  display: block;
   align-items: center;
   color: var(--primary-white-color);
   background-color: var(--button-back-color);
@@ -892,15 +892,9 @@ img {
   border-radius: 4px;
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 28px;
-  margin-top: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.position-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 30px auto 0;
 }
 
 .form {
